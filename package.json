@@ -1,0 +1,29 @@
+{
+  "name": "hunnie",
+  "version": "1.0.0",
+  "description": "Hunnie Website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass sass/main.scss css/style.css -w",
+    "server": "live-server",
+    "start": "npm-run-all --parallel server sass",
+    "prefix": "postcss --use autoprefixer -b 'last 10 versions' css/style.css -o css/prefix.style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stefanomonteiro/hunnie.git"
+  },
+  "author": "Stefano Monteiro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stefanomonteiro/hunnie/issues"
+  },
+  "homepage": "https://github.com/stefanomonteiro/hunnie#readme",
+  "devDependencies": {
+    "autoprefixer": "^8.2.0",
+    "live-server": "^1.2.0",
+    "node-sass": "^4.8.3",
+    "npm-run-all": "^4.1.2",
+    "postcss-cli": "^5.0.0"
+  }
+}
